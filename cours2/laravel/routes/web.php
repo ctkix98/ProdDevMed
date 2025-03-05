@@ -20,4 +20,6 @@ Route::get('afficheTab', [MonPremierControleur::class, 'afficheTab']);
 
 Route::get('artistes/{lettre}', [MonPremierControleur::class, 'afficheTabLettre']);
 
-//Route::get('afficherImage', [MonPremierControleur::class, 'afficherImage']);
+Route::get('afficherImage', [MonPremierControleur::class, 'afficherImage']);
+
+Route::get('proverbe', [MonPremierControleur::class, 'proverbe']);

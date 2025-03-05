@@ -87,4 +87,12 @@ class MonPremierControleur extends Controller
 
         return view('maVue2')->with('artistes', $artistesFiltres);
     }
+
+    public function proverbe(){
+        $proverbes = ["Ses déclarations à l'emporte-pièce", "Un job d'enculeur de mouche", "Au cul la balayette", "Nique ta mère", "Il est fini à la pisse", "Espèce de fourchette à soupe"];
+
+        $random = rand(0, count($proverbes)-1);
+
+        return view('proverbe') ->with('proverbe', $proverbes[$random]);
+    }
 }
