@@ -63,7 +63,7 @@ class Form3Controller extends Controller
 
         $nombreMinutesParUser = $nombrePersonne * $totalMinutesBreak;
         $tempsRestant = $totalMinutes - $nombreMinutesParUser;
-        $tempsParUser = $tempsRestant / $nombrePersonne;
+        $tempsParUser = round($tempsRestant / $nombrePersonne);
 
         // echo ("Temps par utilisateur" . $tempsParUser);
         // echo "<br>";
