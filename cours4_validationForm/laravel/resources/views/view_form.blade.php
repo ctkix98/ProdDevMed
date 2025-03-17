@@ -1,5 +1,5 @@
 <!-- resources/views/view_resultat.blade.php -->
-@extends('template_form')
+@extends('template_contact')
 <h1>Enregistrement de manifestation</h1>
 @section('contenu')
 <form action="{{ url('traiteFormulaire') }}" method="post" accept-charset="UTF-8">

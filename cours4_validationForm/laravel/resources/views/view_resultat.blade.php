@@ -1,9 +1,9 @@
 <!-- resources/views/view_resultat.blade.php -->
-@extends('template_form')
+@extends('template_contact')
 @section('contenu')
-<div>
-La date de début est {{ \Carbon\Carbon::parse($requete->input('start'))->locale('fr')->format('d F Y') }}
-La date de fin est {{ \Carbon\Carbon::parse($requete->input('end'))->locale('fr')->format('d F Y') }}
-    La ville est {{$requete->input('lieu')}}
-</div>
-@endsection
+<div class="col-sm-offset-3 col-sm-6">
+    <div class="panel panel-info">
+        <div class="panel-heading">Information</div>
+        <div class="panel-body">Merci. Votre message concernant la prochaine manifestation a été envoyée au responsable</div> 
+    </div>
+    @endsection
